@@ -73,12 +73,22 @@
 
        <button>Découvrir Nexa</button>
         <p id="message"></p>
-
+<div id="services"></div>
 <script>
 document.querySelector("button").addEventListener("click", function() {
-   alert("Bienvenue sur Nexa !");;
-    
-document.getElementById("message").textContent = "Nexa est prête à vous servir et à simplifier votre quotidien. Découvrez une nouvelle expérience dès maintenant !";});
+
+    document.getElementById("message").textContent =
+        "Nexa est prête à vous servir et à vous accompagner dans vos projets.";
+
+    document.getElementById("services").innerHTML = `
+        <h3>Ce que Nexa peut vous offrir</h3>
+        <p>📚 Apprendre et développer vos compétences</p>
+        <p>🤖 Être accompagné par l’intelligence artificielle</p>
+        <p>🛠️ Créer et gérer vos projets</p>
+        <p>👥 Apprendre et collaborer avec une communauté</p>
+        <p>💼 Découvrir des opportunités</p>
+    `;
+});
 </script>
 
 </div>
