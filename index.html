@@ -84,24 +84,40 @@
 
        <button>Découvrir Nexa</button>
         <p id="message"></p>
-<div id="services"></div>
+<div id="services">
+  <h3>Ce que Nexa peut vous offrir</h3>
+
+  <div class="service">
+    📚 Apprendre et développer vos compétences
+  </div>
+
+  <div class="service">
+    🤖 Être accompagné par l'intelligence artificielle
+  </div>
+
+  <div class="service">
+    🛠️ Créer et gérer vos projets
+  </div>
+
+  <div class="service">
+    👥 Apprendre et collaborer avec une communauté
+  </div>
+
+  <div class="service">
+    💼 Découvrir des opportunités
+  </div>
+</div>
+
 <script>
 document.querySelector("button").addEventListener("click", function() {
 
-    document.getElementById("message").textContent =
-        "Nexa est prête à vous servir et à vous accompagner dans vos projets.";
+  document.getElementById("message").textContent =
+    "Nexa est prête à vous servir et à vous accompagner dans vos projets.";
 
-    document.getElementById("services").innerHTML = `
-        <h3>Ce que Nexa peut vous offrir</h3>
-<div class="service">📚 Apprendre et développer vos compétences</div>
-        <div class="service">🤖 Être accompagné par l’intelligence artificielle</div>
-        <p>🛠️ Créer et gérer vos projets</p>
-        <p>👥 Apprendre et collaborer avec une communauté</p>
-        <p>💼 Découvrir des opportunités</p>
-    `;
+  document.getElementById("services").style.display = "block";
+
 });
 </script>
-
 </div>
 </body>
 </html>
