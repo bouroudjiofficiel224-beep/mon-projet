@@ -618,14 +618,17 @@ function envoyerMessage() {
 
     let reponse = "";
 
-    if (
-        texte.includes("bonjour") ||
-        texte.includes("salut") ||
-        texte.includes("hello")
-    ) {
-        reponse =
-            "Bonjour 👋 Je suis Nexa. Je suis là pour vous accompagner dans vos apprentissages, vos idées et vos projets.";
-    }
+   if (
+    texte.includes("bonjour") ||
+    texte.includes("bonjou") ||
+    texte.includes("bonsoir") ||
+    texte.includes("salut") ||
+    texte.includes("hello") ||
+    texte.includes("coucou")
+) {
+    reponse =
+        "Bonjour 👋 Je suis Nexa. Je suis là pour vous accompagner dans vos apprentissages, vos idées et vos projets.";
+}
 
     else if (
         texte.includes("projet") ||
